@@ -1,7 +1,7 @@
 #!/bin/bash
 docker=`systemctl status docker| grep -i running| echo $?`
 #exitcode=`echo $?`
-
+#this is previous logic
 #if [ $exitcode -eq 0 ];
 if [ $docker -eq 0 ];
  then
